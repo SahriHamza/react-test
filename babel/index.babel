@@ -1,0 +1,38 @@
+
+/*
+ * A simple React component
+ */
+class Main extends React.Component {
+  render() {
+    return (
+      <div>
+        <br/>
+        <br/>
+        <p>
+          The goal of this assignment is to render a simple chart.<br/><br/>
+          The data is attached to this Pen (https://prod.stargazer.co/metrics.js).<br/>
+          We want to display the cummulative number of installs through time.
+          As you can see, React is already attached.<br/><br/>
+          You are free to use any chart library (d3.js, chart.js,...).<br/><br/>
+          Just add them in Settings>Javascript>Add external script.<br/>
+          Try to keep it simple and clean.<br/><br/>
+          
+          You can access the data like that: metrics.length {this.props.metrics.length}<br/><br/>
+          I expect something like this:
+        </p>
+        <img src="http://www.excel-easy.com/data-analysis/images/charts/line-chart.png"/>
+        <br/>
+        <br/> 
+        Just fork this pen, remove the content, and start working on it.
+        <br/>
+        <br/>
+        
+      </div>
+    );
+  }
+}
+
+/*
+ * Render the above component into the div#app
+ */
+React.render(<Main metrics={metrics}/>, document.getElementById('app'));
